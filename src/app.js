@@ -26,6 +26,9 @@ app.get("/repositories", (request, response) => {
 
 app.post("/repositories", (request, response) => {
   const { title, url, techs } = request.body;
+  if (!title || !url || !techs) {
+    return response.status(400).json({ "error": "invalid body data" });
+  }
   const repository = { id: uuid(), title, url, techs, likes: 0 };
   repositories.push(repository);
   return response.json(repository);
