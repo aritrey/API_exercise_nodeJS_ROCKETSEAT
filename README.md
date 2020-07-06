@@ -18,4 +18,4 @@ RocketSeat BootCamp - NodeJS Exercise
     - [**POST**  *'/repositories/:id/like'*]: adds one more like to the repository with the mentioned id<br />
       returns json: ```{"id": uuid, title: string, url: string, techs: Array<string>, likes: number }```<br /><br />
 - Returns Error for invalid requests
-- a fitting frontend can be found here
+- a fitting frontend can be found here: [mobile](https://github.com/aritrey/react-native_exercise "mobile"), [desktop](https://github.com/aritrey/reactjs_exercise "desktop")
